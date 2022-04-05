@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//hello this is Moiz Butt
+import 'package:carousel_pro/carousel_pro.dart';
 void main() {
   runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -20,7 +20,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        elevation: 0.1,
+        backgroundColor: Colors.purple,
         title: const Text('Spice Bazaar'),
         actions: <Widget>[
           IconButton(
@@ -39,7 +40,7 @@ class _HomePageState extends State<HomePage> {
       ),
       drawer: Drawer(
         child: ListView(
-          children:  <Widget>[
+          children: <Widget>[
             //header
             UserAccountsDrawerHeader(
               accountName: const Text('Moiz Butt'),
@@ -52,6 +53,58 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.white,
                   ),
                 ),
+              ),
+              decoration: const BoxDecoration(color: Colors.purple),
+            ),
+//        body
+            InkWell(
+              onTap: () {},
+              child: const ListTile(
+                title: Text('Home Page'),
+                leading: Icon(Icons.home, color: Colors.purple),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: const ListTile(
+                title: Text('My Account'),
+                leading: Icon(Icons.person, color: Colors.purple),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: const ListTile(
+                title: Text('My Orders'),
+                leading: Icon(Icons.shopping_basket, color: Colors.purple),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: const ListTile(
+                title: Text('Categories'),
+                leading: Icon(Icons.dashboard, color: Colors.purple),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: const ListTile(
+                title: Text('Favourites'),
+                leading: Icon(Icons.favorite, color: Colors.purple),
+              ),
+            ),
+            const Divider(),
+            InkWell(
+              onTap: () {},
+              child: const ListTile(
+                title: Text('Settings'),
+                leading: Icon(Icons.settings, color: Colors.purple),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: const ListTile(
+                title: Text('About'),
+                leading: Icon(Icons.help, color: Colors.purple),
               ),
             ),
           ],
