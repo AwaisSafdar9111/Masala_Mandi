@@ -3,7 +3,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 void main() {
   runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
-    title: 'Spice Bazaar',
+    title: 'E COM ',
     home: HomePage(),
   ));
 }
