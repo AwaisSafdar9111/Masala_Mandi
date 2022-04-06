@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:carousel_pro/carousel_pro.dart';
 void main() {
   runApp(const MaterialApp(
@@ -18,6 +19,32 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+  Widget imageCarousel=SizedBox(
+  height: 200,
+      // width: MediaQuery.of(context).size.width,
+    child: Carousel(
+      boxFit: BoxFit.cover,
+      images: const [
+        AssetImage('images/Mix Spice.jpg'),
+        AssetImage('images/Haldi.jpg'),
+        AssetImage('images/Coriander Powder(Dhania).jpg'),
+        AssetImage('images/Cream.jpg'),
+        AssetImage('images/black pepper.jpg'),
+        AssetImage('images/Desi Ghee.jpg'),
+        AssetImage('images/Desi Red Chilli Crushed.webp'),
+        AssetImage('images/Garam Masala Powder.jpg'),
+        AssetImage('images/Gram Flour.jpg'),
+        AssetImage('images/Red Chilli Powder.jpg'),
+
+      ],
+      autoplay: true,
+      dotSize: 8.0,
+      dotBgColor: Colors.white10,
+      indicatorBgPadding: 10.0,
+      animationCurve: Curves.fastOutSlowIn,
+      animationDuration: const Duration(milliseconds: 500),
+    ),
+  );
     return Scaffold(
       appBar: AppBar(
         elevation: 0.1,
@@ -109,6 +136,12 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
+      ),
+      body: ListView(
+        children:<Widget> [
+          imageCarousel
+
+        ],
       ),
     );
   }
