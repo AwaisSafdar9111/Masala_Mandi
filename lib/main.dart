@@ -143,15 +143,17 @@ class _HomePageState extends State<HomePage> {
         children:<Widget> [
           imageCarousel,
           //padding widget
-          new Padding(padding: const EdgeInsets.all(6.0),
+          new Padding(padding: const EdgeInsets.all(10.0),
           child: new Text('Categories '),
           ),
           //Horizontal list view begins here
           HorizontalList(),
+          const Divider(),
           //padding widget
-          new Padding(padding: const EdgeInsets.all(50.0),
+          new Padding(padding: const EdgeInsets.all(30.0),
             child: new Text('Recent Products '),
           ),
+          Padding(padding: const EdgeInsets.all(10.0),),
  //grid View
           Container(
             height: 320.0,
