@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+//my own imports
 import 'package:spice_bazaar/categories/horizontal_listview.dart';
+import 'package:spice_bazaar/categories/products.dart';
 void main() {
   runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -108,7 +110,7 @@ class _HomePageState extends State<HomePage> {
             InkWell(
               onTap: () {},
               child: const ListTile(
-                title: Text('categories icons'),
+                title: Text('Categories'),
                 leading: Icon(Icons.dashboard, color: Colors.purple),
               ),
             ),
@@ -146,6 +148,15 @@ class _HomePageState extends State<HomePage> {
           ),
           //Horizontal list view begins here
           HorizontalList(),
+          //padding widget
+          new Padding(padding: const EdgeInsets.all(50.0),
+            child: new Text('Recent Products '),
+          ),
+ //grid View
+          Container(
+            height: 320.0,
+            child: Products(),
+          )
         ],
 
       ),
