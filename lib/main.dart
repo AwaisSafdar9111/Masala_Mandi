@@ -108,7 +108,7 @@ class _HomePageState extends State<HomePage> {
             InkWell(
               onTap: () {},
               child: const ListTile(
-                title: Text('categories'),
+                title: Text('categories icons'),
                 leading: Icon(Icons.dashboard, color: Colors.purple),
               ),
             ),
@@ -142,7 +142,7 @@ class _HomePageState extends State<HomePage> {
           imageCarousel,
           //padding widget
           new Padding(padding: const EdgeInsets.all(6.0),
-          child: new Text('categories'),
+          child: new Text('Categories '),
           ),
           //Horizontal list view begins here
           HorizontalList(),
