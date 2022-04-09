@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-//Moiz Butt
 class HorizontalList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
