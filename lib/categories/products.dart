@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spice_bazaar/pages/product_details.dart';
 
 class Products extends StatefulWidget {
   const Products({Key key}) : super(key: key);
@@ -73,7 +74,8 @@ class Single_pro extends StatelessWidget {
         tag: prod_name,
         child: Material(
           child: InkWell(
-            onTap: () {},
+            onTap: () => Navigator.of(context).push(
+                new MaterialPageRoute(builder: (context) => new ProductDetails())),
             child: GridTile(
               footer: Container(
                 color: Colors.white70,
@@ -90,7 +92,11 @@ class Single_pro extends StatelessWidget {
                   subtitle: Text(
                     "\$$prod_old_price",
                     style: TextStyle(
-                        color: Colors.black54, fontWeight: FontWeight.w800,decoration: TextDecoration.lineThrough ,decorationThickness: 2.85,),
+                      color: Colors.black54,
+                      fontWeight: FontWeight.w800,
+                      decoration: TextDecoration.lineThrough,
+                      decorationThickness: 2.85,
+                    ),
                   ),
                 ),
               ),
