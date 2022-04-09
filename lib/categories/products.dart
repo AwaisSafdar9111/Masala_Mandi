@@ -18,8 +18,8 @@ class _ProductsState extends State<Products> {
       "price": 165,
     },
     {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/coriander(Dhania).png',
+      "name": 'Desi Ghee',
+      "picture": 'images/categories icons/Desi ghee.png',
       "old price": 195,
       "price": 165,
     },
@@ -75,7 +75,13 @@ class Single_pro extends StatelessWidget {
         child: Material(
           child: InkWell(
             onTap: () => Navigator.of(context).push(
-                new MaterialPageRoute(builder: (context) => new ProductDetails())),
+              //here we are passing the values of the product to the product details page
+                new MaterialPageRoute(builder: (context) => new ProductDetails(
+                  product_details_name: prod_name,
+                  product_details_new_price: prod_price,
+                  product_details_old_price: prod_old_price,
+                  product_detail_picture: prod_picture,
+                ))),
             child: GridTile(
               footer: Container(
                 color: Colors.white70,
