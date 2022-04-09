@@ -41,6 +41,7 @@ class _HomePageState extends State<HomePage> {
       ],
       autoplay: true,
       dotSize: 8.0,
+      overlayShadowColors: Colors.white70,
       dotBgColor: Colors.white10,
       indicatorBgPadding: 10.0,
       animationCurve: Curves.fastOutSlowIn,
