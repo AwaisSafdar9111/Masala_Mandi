@@ -3,6 +3,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 //my own imports
 import 'package:spice_bazaar/categories/horizontal_listview.dart';
 import 'package:spice_bazaar/categories/products.dart';
+import 'package:spice_bazaar/pages/cart.dart';
 void main() {
   runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -65,7 +66,9 @@ class _HomePageState extends State<HomePage> {
                 Icons.shopping_cart,
                 color: Colors.white,
               ),
-              onPressed: () {})
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Cart()));
+              })
         ],
       ),
       drawer: Drawer(
@@ -109,7 +112,9 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>new Cart()));
+              },
               child: const ListTile(
                 title: Text('Shopping Cart'),
                 leading: Icon(Icons.shopping_cart, color: Colors.purple),
