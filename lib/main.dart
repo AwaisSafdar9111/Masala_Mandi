@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
       autoplay: true,
       dotSize: 8.0,
       overlayShadowColors: Colors.white70,
-      dotBgColor: Colors.white10,
+      dotBgColor: Colors.transparent,
       indicatorBgPadding: 10.0,
       animationCurve: Curves.fastOutSlowIn,
       animationDuration: const Duration(milliseconds: 500),
@@ -111,8 +111,8 @@ class _HomePageState extends State<HomePage> {
             InkWell(
               onTap: () {},
               child: const ListTile(
-                title: Text('Categories'),
-                leading: Icon(Icons.dashboard, color: Colors.purple),
+                title: Text('Shopping Cart'),
+                leading: Icon(Icons.shopping_cart, color: Colors.purple),
               ),
             ),
             InkWell(
@@ -127,14 +127,14 @@ class _HomePageState extends State<HomePage> {
               onTap: () {},
               child: const ListTile(
                 title: Text('Settings'),
-                leading: Icon(Icons.settings, color: Colors.purple),
+                leading: Icon(Icons.settings),
               ),
             ),
             InkWell(
               onTap: () {},
               child: const ListTile(
                 title: Text('About'),
-                leading: Icon(Icons.help, color: Colors.purple),
+                leading: Icon(Icons.help),
               ),
             ),
           ],

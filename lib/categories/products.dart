@@ -25,13 +25,13 @@ class _ProductsState extends State<Products> {
     },
     {
       "name": 'Haldi',
-      "picture": 'images/categories icons/coriander(Dhania).png',
+      "picture": 'images/categories icons/turmeric(Haldi).png',
       "old price": 195,
       "price": 165,
     },
     {
       "name": 'Haldi',
-      "picture": 'images/categories icons/coriander(Dhania).png',
+      "picture": 'images/categories icons/cream.png',
       "old price": 195,
       "price": 165,
     },
@@ -71,7 +71,7 @@ class Single_pro extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Hero(
-        tag: prod_name,
+        tag: new Text("hero tag 1`"),
         child: Material(
           child: InkWell(
             onTap: () => Navigator.of(context).push(
@@ -85,26 +85,14 @@ class Single_pro extends StatelessWidget {
             child: GridTile(
               footer: Container(
                 color: Colors.white70,
-                child: ListTile(
-                  leading: Text(
-                    prod_name,
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  title: Text(
-                    "\$$prod_price",
-                    style: TextStyle(
-                        color: Colors.purple, fontWeight: FontWeight.w800),
-                  ),
-                  subtitle: Text(
-                    "\$$prod_old_price",
-                    style: TextStyle(
-                      color: Colors.black54,
-                      fontWeight: FontWeight.w800,
-                      decoration: TextDecoration.lineThrough,
-                      decorationThickness: 2.85,
-                    ),
-                  ),
-                ),
+          child: new Row(
+            children: <Widget>[
+              Expanded(child: Text(prod_name, style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16.0),),
+
+              ),
+              new Text("\$${prod_price}",style: TextStyle (color: Colors.purple,fontWeight: FontWeight.bold),)
+            ],
+          ),
               ),
               child: Image.asset(
                 prod_picture,
