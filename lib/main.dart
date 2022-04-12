@@ -22,13 +22,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-  Widget imageCarousel=SizedBox(
+  Widget imageCarousel=Container(
   height: 200,
-      // width: MediaQuery.of(context).size.width,
+    //width: MediaQuery.of(context).size.width,
     child: Carousel(
       boxFit: BoxFit.cover,
       images: const [
-        AssetImage('images/Mix Spice.jpg'),
+        AssetImage('images/Spice mix.jpg'),
         AssetImage('images/Haldi.jpg'),
         AssetImage('images/Coriander Powder(Dhania).jpg'),
         AssetImage('images/Cream.jpg'),
@@ -145,28 +145,29 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      body: ListView(
+      body: Column(
         children:<Widget> [
           imageCarousel,
           //padding widget
-          new Padding(padding: const EdgeInsets.all(10.0),
-          child: new Text('Categories '),
+          new Padding(padding: const EdgeInsets.all(4.0),
+          child: Container(
+              alignment: Alignment.centerLeft,
+              child: new Text("Categories ")),
           ),
           //Horizontal list view begins here
           HorizontalList(),
           const Divider(),
           //padding widget
-          new Padding(padding: const EdgeInsets.all(30.0),
-            child: new Text('Recent Products '),
+          new Padding(padding: const EdgeInsets.all(8.0),
+            child: Container(
+                alignment: Alignment.centerLeft,
+                child: new Text('Recent Products ')),
           ),
-          Padding(padding: const EdgeInsets.all(10.0),),
+          // Padding(padding: const EdgeInsets.all(10.0),),
  //grid View
-          Container(
-            height: 320.0,
-            child: Products(),
-          )
-        ],
 
+             Flexible(child: Products()),
+        ],
       ),
     );
   }

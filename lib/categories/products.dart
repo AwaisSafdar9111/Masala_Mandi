@@ -42,13 +42,16 @@ class _ProductsState extends State<Products> {
     return GridView.builder(
         itemCount: product_list.length,
         gridDelegate:
-            new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+            new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount:2),
         itemBuilder: (BuildContext context, int index) {
-          return Single_pro(
-            prod_name: product_list[index]['name'],
-            prod_picture: product_list[index]['picture'],
-            prod_old_price: product_list[index]['old price'],
-            prod_price: product_list[index]['price'],
+          return Padding(
+            padding: const EdgeInsets.all(4.0),
+            child: Single_pro(
+              prod_name: product_list[index]['name'],
+              prod_picture: product_list[index]['picture'],
+              prod_old_price: product_list[index]['old price'],
+              prod_price: product_list[index]['price'],
+            ),
           );
         });
   }
