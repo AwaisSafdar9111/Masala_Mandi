@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+//my own imports
+import 'package:spice_bazaar/categories/cart_products.dart';
 class Cart extends StatefulWidget {
   const Cart({Key key}) : super(key: key);
 
@@ -29,6 +31,7 @@ class _CartState extends State<Cart> {
               onPressed: () {})
         ],
       ),
+      body: new Cart_Products(),
       bottomNavigationBar: new Container(
         color: Colors.white,
         child: Row(
