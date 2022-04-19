@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 //my own imports
 import 'package:spice_bazaar/categories/horizontal_listview.dart';
-import 'package:spice_bazaar/categories/products.dart';
 import 'package:spice_bazaar/pages/cart.dart';
 void main() {
   runApp(const MaterialApp(
@@ -23,7 +22,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
   Widget imageCarousel=Container(
-  height: 200,
+  height: 250,
+    padding: EdgeInsets.all(32.0),
+
     //width: MediaQuery.of(context).size.width,
     child: Carousel(
       boxFit: BoxFit.cover,
@@ -42,11 +43,13 @@ class _HomePageState extends State<HomePage> {
       ],
       autoplay: true,
       dotSize: 8.0,
-      overlayShadowColors: Colors.white70,
+      overlayShadowColors: Colors.black12,
       dotBgColor: Colors.transparent,
       indicatorBgPadding: 10.0,
+
       animationCurve: Curves.fastOutSlowIn,
       animationDuration: const Duration(milliseconds: 500),
+
     ),
   );
     return Scaffold(
@@ -165,8 +168,7 @@ class _HomePageState extends State<HomePage> {
           ),
           // Padding(padding: const EdgeInsets.all(10.0),),
  //grid View
-
-             Flexible(child: Products()),
+          // Flexible(child: Products()),
         ],
       ),
     );

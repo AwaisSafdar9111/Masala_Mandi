@@ -3,45 +3,30 @@ class HorizontalList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 180.0,
-      padding: EdgeInsets.all(2.0),
+      height: 50.0,
+      padding: EdgeInsets.all(0.5),
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           Category(
-              image_location: 'images/categories icons/coriander(Dhania).png',
-              image_caption: 'Dhania Powder/دھنیا پاؤڈر'
+              image_location: 'images/Coriander Powder(Dhania).jpg',
+              image_caption: 'Spices'
           ),
             Category(
-              image_location: 'images/categories icons/chilli.png',
-              image_caption: 'Chilli/مرچیں',
+              image_location: 'images/Red Chilli Powder.jpg',
+              image_caption: ' Handi craft',
 
 
           ),
           Category(
-              image_location: 'images/categories icons/cream.png',
-              image_caption: 'Cream/کریم'
+              image_location: 'images/Cream.jpg',
+              image_caption: 'Dairy products'
 
           ),
 
           Category(
               image_location: 'images/categories icons/Garam Masala.png',
-              image_caption: 'Garam Masala/گرم مصالحہ'
-
-          ),
-          Category(
-              image_location: 'images/categories icons/Desi ghee.png',
-              image_caption: 'Desi Ghee/دیسی گھی'
-
-          ),
-          Category(
-              image_location: 'images/categories icons/turmeric(Haldi).png',
-              image_caption: 'Haldi/ہلدی'
-
-          ),
-          Category(
-              image_location: 'images/categories icons/Gram flour(Basen).png',
-              image_caption: 'Gram Flour/بیسن'
+              image_caption: 'Custom products'
 
           ),
         ],
