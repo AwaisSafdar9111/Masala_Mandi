@@ -91,7 +91,7 @@ class Single_cart_product extends StatelessWidget {
                   padding: const EdgeInsets.all(4.0),
                   child: new Text(
                     cart_prod_size,
-                    style: TextStyle(color: Colors.purple),
+                    style: TextStyle(color: Colors.green),
                   ),
                 ),
                 // ===THIS SECTION IS FOR THE COLOR OF PRODUCT
@@ -103,7 +103,7 @@ class Single_cart_product extends StatelessWidget {
                   padding: const EdgeInsets.all(4.0),
                   child: new Text(
                     cart_prod_color,
-                    style: TextStyle(color: Colors.purple),
+                    style: TextStyle(color: Colors.green),
                   ),
                 ),
               ],
@@ -117,7 +117,7 @@ class Single_cart_product extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 17.0,
                     fontWeight: FontWeight.bold,
-                    color: Colors.purple),
+                    color: Colors.green),
               ),
             )
           ],

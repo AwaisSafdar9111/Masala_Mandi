@@ -14,7 +14,7 @@ class _CartState extends State<Cart> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.1,
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.green,
         title: const Text('Spice Bazaar'),
         actions: <Widget>[
           IconButton(
@@ -42,7 +42,7 @@ class _CartState extends State<Cart> {
             )),
             Expanded(child: new MaterialButton(onPressed: (){},
             child: new Text("Check out",style: TextStyle(color: Colors.white),),
-            color: Colors.purple,),
+            color: Colors.green,),
             )
           ],
         ),

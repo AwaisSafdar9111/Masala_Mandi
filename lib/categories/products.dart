@@ -35,6 +35,13 @@ class _ProductsState extends State<Products> {
       "old price": 195,
       "price": 165,
     },
+    {
+      "name": 'Haldi',
+      "picture": 'images/categories icons/coriander(Dhania).png',
+      "old price": 195,
+      "price": 165,
+    },
+
   ];
 
   @override
@@ -42,9 +49,12 @@ class _ProductsState extends State<Products> {
     return GridView.builder(
         itemCount: product_list.length,
         gridDelegate:
-            new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount:2),
+        new SliverGridDelegateWithFixedCrossAxisCount( crossAxisSpacing: 2,
+            mainAxisSpacing: 2,crossAxisCount:2,childAspectRatio:0.999,
+        ),
+
         itemBuilder: (BuildContext context, int index) {
-          return Padding(
+                    return Padding(
             padding: const EdgeInsets.all(4.0),
             child: Single_pro(
               prod_name: product_list[index]['name'],
@@ -60,10 +70,10 @@ class _ProductsState extends State<Products> {
 class Single_pro extends StatelessWidget {
   const Single_pro(
       {Key key,
-      this.prod_name,
-      this.prod_picture,
-      this.prod_old_price,
-      this.prod_price})
+        this.prod_name,
+        this.prod_picture,
+        this.prod_old_price,
+        this.prod_price})
       : super(key: key);
   final prod_name;
   final prod_picture;
@@ -88,18 +98,18 @@ class Single_pro extends StatelessWidget {
             child: GridTile(
               footer: Container(
                 color: Colors.white70,
-          child: new Row(
-            children: <Widget>[
-              Expanded(child: Text(prod_name, style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16.0),),
+                child: new Row(
+                  children: <Widget>[
+                    Expanded(child: Text(prod_name, style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16.0),),
 
-              ),
-              new Text("\$${prod_price}",style: TextStyle (color: Colors.purple,fontWeight: FontWeight.bold),)
-            ],
-          ),
+                    ),
+                    new Text("\$${prod_price}",style: TextStyle (color: Colors.purple,fontWeight: FontWeight.bold),)
+                  ],
+                ),
               ),
               child: Image.asset(
                 prod_picture,
-                fit: BoxFit.cover,
+                fit: BoxFit.contain,
               ),
             ),
           ),

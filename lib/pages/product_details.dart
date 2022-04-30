@@ -26,7 +26,7 @@ class _ProductDetailsState extends State<ProductDetails> {
     return Scaffold(
       appBar: new AppBar(
         elevation: 0.1,
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.green,
         title: InkWell(
             onTap: () {
               Navigator.push(context,
@@ -72,7 +72,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           child: new Text(
                         "\$${widget.product_details_new_price}",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, color: Colors.purple),
+                            fontWeight: FontWeight.bold, color: Colors.green),
                       )),
                     ],
                   ),
@@ -105,7 +105,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                         });
                   },
                   color: Colors.white,
-                  textColor: Colors.purple,
+                  textColor: Colors.green,
                   elevation: 0.2,
                   child: Row(
                     children: <Widget>[
@@ -137,7 +137,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                         });
                   },
                   color: Colors.white,
-                  textColor: Colors.purple,
+                  textColor: Colors.green,
                   elevation: 0.2,
                   child: Row(
                     children: <Widget>[
@@ -169,7 +169,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                         });
                   },
                   color: Colors.white,
-                  textColor: Colors.purple,
+                  textColor: Colors.green,
                   elevation: 0.2,
                   child: Row(
                     children: <Widget>[
@@ -188,7 +188,7 @@ class _ProductDetailsState extends State<ProductDetails> {
               Expanded(
                 child: MaterialButton(
                     onPressed: () {},
-                    color: Colors.purple,
+                    color: Colors.green,
                     textColor: Colors.white,
                     elevation: 0.2,
                     child: new Text('Buy now')),
@@ -197,13 +197,13 @@ class _ProductDetailsState extends State<ProductDetails> {
                   onPressed: () {},
                   icon: Icon(
                     Icons.add_shopping_cart,
-                    color: Colors.purple,
+                    color: Colors.green,
                   )),
               new IconButton(
                   onPressed: () {},
                   icon: Icon(
                     Icons.favorite_border,
-                    color: Colors.purple,
+                    color: Colors.green,
                   )),
             ],
           ),
@@ -242,7 +242,7 @@ class _ProductDetailsState extends State<ProductDetails> {
               // Remember to create the product Brand
               Padding(
                 padding: EdgeInsets.all(5.0),
-                child: new Text("Brand X"),
+                child: new Text("No Brand"),
               )
             ],
           ),
@@ -257,7 +257,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                 ),
               ),
               // Remember the product Condition
-              Padding(padding: EdgeInsets.all(5.0), child: new Text("New")),
+              Padding(padding: EdgeInsets.all(5.0), child: new Text("Fresh")),
 
             ],
           ),

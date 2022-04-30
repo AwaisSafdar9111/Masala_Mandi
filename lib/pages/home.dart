@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:spice_bazaar/categories/horizontal_listview.dart';
 import 'package:spice_bazaar/pages/cart.dart';
+import 'package:spice_bazaar/categories/products.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
@@ -15,10 +16,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    final useer= FirebaseAuth.instance.currentUser;
     Widget imageCarousel=Container(
-      height: 250,
-      padding: EdgeInsets.all(32.0),
+      height: 100,
+      padding: EdgeInsets.all(8.0),
 
       //width: MediaQuery.of(context).size.width,
       child: Carousel(
@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
 
         ],
         autoplay: true,
-        dotSize: 8.0,
+        dotSize: 5.0,
         overlayShadowColors: Colors.black12,
         dotBgColor: Colors.transparent,
         indicatorBgPadding: 10.0,
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.1,
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.green,
         title: const Text('Spice Bazaar'),
         actions: <Widget>[
           IconButton(
@@ -74,36 +74,39 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             //header
             UserAccountsDrawerHeader(
-              accountName:  Text(useer.displayName,style:TextStyle(color: Colors.white,fontSize: 10),),
-              accountEmail:  Text(useer.email,style:TextStyle(color: Colors.white,fontSize: 10),),
+              accountName: const Text('Moiz Butt'),
+              accountEmail: const Text('moizbutt890@gmail.com'),
               currentAccountPicture: GestureDetector(
-                child:  CircleAvatar(
-                  radius: 25,
-                  backgroundImage: NetworkImage(useer.photoURL),
+                child: const CircleAvatar(
+                  backgroundColor: Colors.grey,
+                  child: Icon(
+                    Icons.person,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-              decoration: const BoxDecoration(color: Colors.purple),
+              decoration: const BoxDecoration(color: Colors.green),
             ),
 //        body
             InkWell(
               onTap: () {},
               child: const ListTile(
                 title: Text('Home Page'),
-                leading: Icon(Icons.home, color: Colors.purple),
+                leading: Icon(Icons.home, color: Colors.green),
               ),
             ),
             InkWell(
               onTap: () {},
               child: const ListTile(
                 title: Text('My Account'),
-                leading: Icon(Icons.person, color: Colors.purple),
+                leading: Icon(Icons.person, color: Colors.green),
               ),
             ),
             InkWell(
               onTap: () {},
               child: const ListTile(
                 title: Text('My Orders'),
-                leading: Icon(Icons.shopping_basket, color: Colors.purple),
+                leading: Icon(Icons.shopping_basket, color: Colors.green),
               ),
             ),
             InkWell(
@@ -112,14 +115,14 @@ class _HomePageState extends State<HomePage> {
               },
               child: const ListTile(
                 title: Text('Shopping Cart'),
-                leading: Icon(Icons.shopping_cart, color: Colors.purple),
+                leading: Icon(Icons.shopping_cart, color: Colors.green),
               ),
             ),
             InkWell(
               onTap: () {},
               child: const ListTile(
                 title: Text('Favourites'),
-                leading: Icon(Icons.favorite, color: Colors.purple),
+                leading: Icon(Icons.favorite, color: Colors.green),
               ),
             ),
             const Divider(),
@@ -158,9 +161,8 @@ class _HomePageState extends State<HomePage> {
                 alignment: Alignment.centerLeft,
                 child: new Text('Recent Products ')),
           ),
-          // Padding(padding: const EdgeInsets.all(10.0),),
-          //grid View
-          // Flexible(child: Products()),
+          Padding(padding: const EdgeInsets.all(10.0),),
+          Flexible(child: Products()),
         ],
       ),
     );
