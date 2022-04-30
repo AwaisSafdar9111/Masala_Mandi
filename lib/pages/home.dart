@@ -1,4 +1,5 @@
 import 'package:carousel_pro/carousel_pro.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 //my own imports
 import 'package:flutter/material.dart';
 import 'package:spice_bazaar/categories/horizontal_listview.dart';
@@ -14,6 +15,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    final useer= FirebaseAuth.instance.currentUser;
     Widget imageCarousel=Container(
       height: 250,
       padding: EdgeInsets.all(32.0),
@@ -72,15 +74,12 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             //header
             UserAccountsDrawerHeader(
-              accountName: const Text('Moiz Butt'),
-              accountEmail: const Text('moizbutt890@gmail.com'),
+              accountName:  Text(useer.displayName,style:TextStyle(color: Colors.white,fontSize: 10),),
+              accountEmail:  Text(useer.email,style:TextStyle(color: Colors.white,fontSize: 10),),
               currentAccountPicture: GestureDetector(
-                child: const CircleAvatar(
-                  backgroundColor: Colors.grey,
-                  child: Icon(
-                    Icons.person,
-                    color: Colors.white,
-                  ),
+                child:  CircleAvatar(
+                  radius: 25,
+                  backgroundImage: NetworkImage(useer.photoURL),
                 ),
               ),
               decoration: const BoxDecoration(color: Colors.purple),
