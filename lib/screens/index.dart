@@ -1,9 +1,7 @@
 import 'package:carousel_pro/carousel_pro.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-//my own imports
 import 'package:flutter/material.dart';
 import 'package:spice_bazaar/categories/horizontal_listview.dart';
-import 'package:spice_bazaar/pages/cart.dart';
+import 'package:spice_bazaar/screens/chat.dart';
 import 'package:spice_bazaar/categories/products.dart';
 
 class HomePage extends StatefulWidget {
@@ -65,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.white,
               ),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>Cart()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Chat()));
               })
         ],
       ),
@@ -111,7 +109,7 @@ class _HomePageState extends State<HomePage> {
             ),
             InkWell(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>new Cart()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>new Chat()));
               },
               child: const ListTile(
                 title: Text('Shopping Cart'),

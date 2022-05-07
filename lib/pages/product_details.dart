@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spice_bazaar/main.dart';
-
-import 'home.dart';
-
+import 'package:spice_bazaar/screens/index.dart';
 class ProductDetails extends StatefulWidget {
   const ProductDetails(
       {Key key,

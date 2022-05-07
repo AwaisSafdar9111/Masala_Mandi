@@ -1,8 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:spice_bazaar/pages/SignUp.dart';
-
-import '../pages/home.dart';
+import '../screens/index.dart';
 
 class SignUpCheckWidget extends StatelessWidget {
   @override

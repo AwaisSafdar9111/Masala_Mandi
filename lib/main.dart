@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 import 'package:spice_bazaar/Provider/google_sign_in.dart';
-import 'package:spice_bazaar/pages/SignUp.dart';
-import 'package:spice_bazaar/pages/home.dart';
+import 'package:spice_bazaar/screens/home.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +22,7 @@ class MyApp extends StatelessWidget {
         child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: title,
-        home: HomePage(),
+        home: Homescreen(),
       ),
   );
 
