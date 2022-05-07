@@ -42,6 +42,14 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_native_splash: ^0.2.8
+flutter_native_splash:
+  image: images/splash.jpg
+  color: "#FFFF00"
+  android: true
+  ios: true
+  android_gravity: fill
+  ios_content_mode: ScaleAspectFill
   flutter_launcher_name: ^0.0.1
 flutter_launcher_name:
   name: "Spice Bazaar"
@@ -51,6 +59,9 @@ flutter_launcher_name:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
+
+
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
