@@ -10,8 +10,8 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.pink ,
-        title: Text('Dashboard'),
+        backgroundColor: Colors.green ,
+        title: Text('catagories'),
       ),
       body: Center(
         child: Text("Dashboard Screen"),

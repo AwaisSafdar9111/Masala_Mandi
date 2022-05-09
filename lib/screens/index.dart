@@ -150,8 +150,7 @@ class _HomePageState extends State<HomePage> {
                 alignment: Alignment.centerLeft,
                 child: new Text("Categories ")),
           ),
-          //Horizontal list view begins here
-          HorizontalList(),
+
           const Divider(),
           //padding widget
           new Padding(padding: const EdgeInsets.all(8.0),
