@@ -18,7 +18,7 @@ class _HomeState extends State<Homescreen> {
 
   int currentTab = 0; // to keep track of active tab index
   final List<Widget> screens = [
-    Dashboard(),
+    // Dashboard(),
     HomePage(),
     Chat(),
     Profile(),
@@ -63,7 +63,7 @@ class _HomeState extends State<Homescreen> {
                     onPressed: () {
                       setState(() {
                         currentScreen =
-                            HorizontalList(); // if user taps on this dashboard tab will be active
+                            Categories(); // if user taps on this dashboard tab will be active
                         currentTab = 1;
                       });
                     },
