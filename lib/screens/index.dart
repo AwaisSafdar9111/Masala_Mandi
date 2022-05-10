@@ -1,6 +1,5 @@
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
-import 'package:spice_bazaar/categories/horizontal_listview.dart';
 import 'package:spice_bazaar/screens/chat.dart';
 import 'package:spice_bazaar/categories/products.dart';
 
@@ -15,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     Widget imageCarousel=Container(
-      height: 100,
+      height: 250,
       padding: EdgeInsets.all(8.0),
 
       //width: MediaQuery.of(context).size.width,
@@ -145,18 +144,17 @@ class _HomePageState extends State<HomePage> {
         children:<Widget> [
           imageCarousel,
           //padding widget
-          new Padding(padding: const EdgeInsets.all(4.0),
-            child: Container(
-                alignment: Alignment.centerLeft,
-                child: new Text("Categories ")),
-          ),
+
 
           const Divider(),
           //padding widget
-          new Padding(padding: const EdgeInsets.all(8.0),
+          new Padding(padding: const EdgeInsets.all(0.0),
             child: Container(
                 alignment: Alignment.centerLeft,
-                child: new Text('Recent Products ')),
+
+                child:new Text('Products ')
+
+            ),
           ),
           Padding(padding: const EdgeInsets.all(10.0),),
           Flexible(child: Products()),
