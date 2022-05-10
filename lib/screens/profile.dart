@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:spice_bazaar/screens/index.dart';
 
 import '../categories/cart_products.dart';
+import '../pages/cart.dart';
+import 'home.dart';
 
 class Profile extends StatefulWidget {
   @override
@@ -30,10 +33,13 @@ class _ProfileState extends State<Profile> {
           ),
 //        body
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>new Homescreen()));
+            },
             child: const ListTile(
               title: Text('Home Page'),
               leading: Icon(Icons.home, color: Colors.green),
+
             ),
           ),
           InkWell(
@@ -52,7 +58,7 @@ class _ProfileState extends State<Profile> {
           ),
           InkWell(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>new Cart_Products()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>new Cart()));
             },
             child: const ListTile(
               title: Text('Shopping Cart'),

@@ -78,10 +78,13 @@ class _ProductDetailsState extends State<ProductDetails> {
               ),
             ),
           ),
+
           //=========== The first Button ==============
+
           Row(
             children: <Widget>[
               // ====== The Size Button =======
+
               Expanded(
                 child: MaterialButton(
                   onPressed: () {
@@ -379,5 +382,6 @@ class Similar_single_pro extends StatelessWidget {
         ),
       ),
     );
+
   }
 }

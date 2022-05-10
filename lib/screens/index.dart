@@ -1,8 +1,10 @@
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
-import 'package:spice_bazaar/categories/horizontal_listview.dart';
-import 'package:spice_bazaar/screens/chat.dart';
 import 'package:spice_bazaar/categories/products.dart';
+
+import '../categories/cart_products.dart';
+import '../pages/cart.dart';
+import 'home.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
@@ -47,7 +49,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 5,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.green,
         title: const Text('Spice Bazaar'),
         actions: <Widget>[
           IconButton(
@@ -62,7 +64,7 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.white,
               ),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>Chat()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Cart()));
               })
         ],
       ),
@@ -86,7 +88,7 @@ class _HomePageState extends State<HomePage> {
             ),
 //        body
             InkWell(
-              onTap: () {},
+              onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>new Homescreen()));},
               child: const ListTile(
                 title: Text('Home Page'),
                 leading: Icon(Icons.home, color: Colors.green),
@@ -108,7 +110,7 @@ class _HomePageState extends State<HomePage> {
             ),
             InkWell(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>new Chat()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>new Cart()));
               },
               child: const ListTile(
                 title: Text('Shopping Cart'),
@@ -146,12 +148,16 @@ class _HomePageState extends State<HomePage> {
 
           const Divider(),
           //padding widget
-          new Padding(padding: const EdgeInsets.all(8.0),
+          new Padding(padding: const EdgeInsets.only(left: 17.0),
             child: Container(
                 alignment: Alignment.centerLeft,
-                child: new Text('Recent Products ')),
+                child: new Text ('Recent Products ',style: TextStyle(fontSize: 17.0,
+                  fontWeight: FontWeight.bold),)
+
+
+            ),
           ),
-          Padding(padding: const EdgeInsets.all(10.0),),
+          Padding(padding: const EdgeInsets.all(1.0),),
           Flexible(child: Products()),
         ],
       ),
