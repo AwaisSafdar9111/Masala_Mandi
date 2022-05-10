@@ -3,8 +3,8 @@ class HorizontalList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 50.0,
-      padding: EdgeInsets.all(0.5),
+      height: 100.0,
+      padding: EdgeInsets.all(10),
       child: ListView(
         scrollDirection: Axis.horizontal,
 
@@ -47,7 +47,7 @@ class Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(3.0),
+      padding: EdgeInsets.all(10.0),
       child: InkWell(
         onTap: () {},
         child: Container(

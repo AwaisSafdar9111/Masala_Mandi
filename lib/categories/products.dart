@@ -83,9 +83,14 @@ class Single_pro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      margin: EdgeInsets.all(10),
+      color: Colors.green[100],
+      shadowColor: Colors.blueGrey,
+      elevation: 10,
       child: Hero(
         tag: new Text("hero tag 1`"),
         child: Material(
+          borderRadius: BorderRadius.circular(20.0),
           child: InkWell(
             onTap: () => Navigator.of(context).push(
               //here we are passing the values of the product to the product details page

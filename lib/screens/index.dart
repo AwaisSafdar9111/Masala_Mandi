@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     Widget imageCarousel=Container(
-      height: 100,
+      height: 220,
       padding: EdgeInsets.all(8.0),
 
       //width: MediaQuery.of(context).size.width,
@@ -35,11 +35,10 @@ class _HomePageState extends State<HomePage> {
 
         ],
         autoplay: true,
-        dotSize: 5.0,
+        dotSize: 9.0,
         overlayShadowColors: Colors.black12,
-        dotBgColor: Colors.transparent,
+        dotBgColor: Colors.white24,
         indicatorBgPadding: 10.0,
-
         animationCurve: Curves.fastOutSlowIn,
         animationDuration: const Duration(milliseconds: 500),
 
@@ -47,8 +46,8 @@ class _HomePageState extends State<HomePage> {
     );
     return Scaffold(
       appBar: AppBar(
-        elevation: 0.1,
-        backgroundColor: Colors.green,
+        elevation: 5,
+        backgroundColor: Colors.transparent,
         title: const Text('Spice Bazaar'),
         actions: <Widget>[
           IconButton(
@@ -144,12 +143,6 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children:<Widget> [
           imageCarousel,
-          //padding widget
-          new Padding(padding: const EdgeInsets.all(4.0),
-            child: Container(
-                alignment: Alignment.centerLeft,
-                child: new Text("Categories ")),
-          ),
 
           const Divider(),
           //padding widget

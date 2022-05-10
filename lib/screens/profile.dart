@@ -11,16 +11,13 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.green,
-        title: Text('Profile'),
-      ),
        body : ListView(
         children: <Widget>[
           //header
-          Text('Moiz Butt'),
-            Text('moizbutt890@gmail.com'),
-             GestureDetector(
+          UserAccountsDrawerHeader(
+            accountName: const Text('Moiz Butt'),
+            accountEmail: const Text('moizbutt890@gmail.com'),
+            currentAccountPicture: GestureDetector(
               child: const CircleAvatar(
                 backgroundColor: Colors.grey,
                 child: Icon(
@@ -29,6 +26,8 @@ class _ProfileState extends State<Profile> {
                 ),
               ),
             ),
+            decoration: const BoxDecoration(color: Colors.green),
+          ),
 //        body
           InkWell(
             onTap: () {},
