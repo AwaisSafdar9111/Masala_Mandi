@@ -329,16 +329,6 @@ class _Similar_productsState extends State<Similar_products> {
       "price": 165,
     },{
       "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
       "picture": 'images/Desi Ghee.jpg',
       "old price": 195,
       "price": 165,
