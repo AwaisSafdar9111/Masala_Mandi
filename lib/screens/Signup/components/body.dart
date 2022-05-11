@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:spice_bazaar/screens/Login/login_screen.dart';
 import 'package:spice_bazaar/screens/Signup/components/background.dart';
-import 'package:spice_bazaar/screens/Signup/components/or_divider.dart';
-import 'package:spice_bazaar/screens/Signup/components/social_icon.dart';
 import 'package:spice_bazaar/components/already_have_an_account_acheck.dart';
 import 'package:spice_bazaar/components/rounded_button.dart';
 import 'package:spice_bazaar/components/rounded_input_field.dart';
 import 'package:spice_bazaar/components/rounded_password_field.dart';
+import 'package:flutter_svg/svg.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -20,6 +19,11 @@ class Body extends StatelessWidget {
             Text(
               "SIGNUP",
               style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: size.height * 0.03),
+            SvgPicture.asset(
+              "images/signup.svg",
+              height: size.height * 0.35,
             ),
             RoundedInputField(
               hintText: "Your Email",
@@ -46,24 +50,6 @@ class Body extends StatelessWidget {
                 );
               },
             ),
-            OrDivider(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                SocalIcon(
-                  iconSrc: "assets/icons/facebook.svg",
-                  press: () {},
-                ),
-                SocalIcon(
-                  iconSrc: "assets/icons/twitter.svg",
-                  press: () {},
-                ),
-                SocalIcon(
-                  iconSrc: "assets/icons/google-plus.svg",
-                  press: () {},
-                ),
-              ],
-            )
           ],
         ),
       ),
