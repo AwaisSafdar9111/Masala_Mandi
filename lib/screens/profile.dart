@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:spice_bazaar/screens/Login/login_screen.dart';
 import '../authentication_service.dart';
 import '../pages/cart.dart';
 import 'home.dart';
@@ -99,9 +101,19 @@ class _ProfileState extends State<Profile> {
             ),
           ),
           InkWell(
-            onTap: () {
-              //context.read<AuthenticationService>().signOut();
-              print("hemlo g");
+            onTap: () async {
+              SharedPreferences prefs = await SharedPreferences.getInstance();
+              prefs.remove('email');
+              prefs.remove('password');
+              final result = await context
+                  .read<AuthenticationService>()
+                  .signOut();
+
+              if(result == "Signed out"){
+                Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                        builder: (context) => LoginScreen()));
+              }
             },
             child: const ListTile(
               title: Text('LogOut'),
