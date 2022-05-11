@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:spice_bazaar/categories/products.dart';
 import 'package:spice_bazaar/categories/screen_categories_details.dart';
 
 import '../pages/cart.dart';

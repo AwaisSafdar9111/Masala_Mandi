@@ -15,7 +15,7 @@ class _CartState extends State<Cart> {
       appBar: AppBar(
         elevation: 0.1,
         backgroundColor: Colors.green,
-        title: const Text('Spice Bazaar'),
+        title: const Text('Masala Mandi',style:TextStyle(fontWeight:FontWeight.bold, fontSize: 22.0) ),
         actions: <Widget>[
           IconButton(
               icon: const Icon(
@@ -38,7 +38,7 @@ class _CartState extends State<Cart> {
           children: <Widget>[
             Expanded(child: ListTile(
               title: new Text("Total:"),
-              subtitle: new Text("\$230"),
+              subtitle: new Text("Rs 230"),
             )),
             Expanded(child: new MaterialButton(onPressed: (){},
             child: new Text("Check out",style: TextStyle(color: Colors.white),),

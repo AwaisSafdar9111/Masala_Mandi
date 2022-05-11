@@ -30,7 +30,7 @@ class _ProductDetailsState extends State<ProductDetails> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => new HomePage()));
             },
-            child: const Text('Spice Bazaar')),
+            child: const Text('Masala Mandi')),
         actions: <Widget>[
           IconButton(
               icon: const Icon(
@@ -59,16 +59,10 @@ class _ProductDetailsState extends State<ProductDetails> {
                   ),
                   title: new Row(
                     children: <Widget>[
+
                       Expanded(
                           child: new Text(
-                        "\$${widget.product_details_old_price}",
-                        style: TextStyle(
-                            color: Colors.grey,
-                            decoration: TextDecoration.lineThrough),
-                      )),
-                      Expanded(
-                          child: new Text(
-                        "\$${widget.product_details_new_price}",
+                        "Rs${widget.product_details_new_price}",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, color: Colors.green),
                       )),
@@ -137,15 +131,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           );
                         });
                   },
-                  color: Colors.white,
-                  textColor: Colors.green,
-                  elevation: 0.2,
-                  child: Row(
-                    children: <Widget>[
-                      Expanded(child: new Text("Color")),
-                      Expanded(child: new Icon(Icons.arrow_drop_down)),
-                    ],
-                  ),
+
                 ),
               ),
               // ====== The Size Button =======
@@ -212,7 +198,7 @@ class _ProductDetailsState extends State<ProductDetails> {
           new ListTile(
             title: new Text("Product Details"),
             subtitle: new Text(
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."),
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."),
           ),
           Divider(),
           //====ADD THE PRODUCT NAME=====
@@ -289,54 +275,26 @@ class _Similar_productsState extends State<Similar_products> {
   var product_list = [
     {
       "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
+      "picture": 'images/haldi1.jpg',
       "old price": 195,
-      "price": 165,
+      "price": 300,
     },{
-      "name": 'Haldi',
+      "name": 'Desi Ghee',
       "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
+      "price": 1650,
     },{
-      "name": 'Haldi',
+      "name": 'Cream',
+      "picture": 'images/Cream.jpg',
+      "price": 500,
+    },{
+      "name": 'Black Paper ',
       "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
+      "price": 250,
+    },
+    {
+      "name": 'Garm Masala',
+      "picture": 'images/garm_masala.jpg',
+      "price": 200,
     },
   ];
 
@@ -350,7 +308,6 @@ class _Similar_productsState extends State<Similar_products> {
           return Similar_single_pro(
             prod_name: product_list[index]['name'],
             prod_picture: product_list[index]['picture'],
-            prod_old_price: product_list[index]['old price'],
             prod_price: product_list[index]['price'],
           );
         });
@@ -362,12 +319,10 @@ class Similar_single_pro extends StatelessWidget {
       {Key key,
       this.prod_name,
       this.prod_picture,
-      this.prod_old_price,
       this.prod_price})
       : super(key: key);
   final prod_name;
   final prod_picture;
-  final prod_old_price;
   final prod_price;
 
   @override
@@ -383,7 +338,6 @@ class Similar_single_pro extends StatelessWidget {
                     builder: (context) => new ProductDetails(
                           product_details_name: prod_name,
                           product_details_new_price: prod_price,
-                          product_details_old_price: prod_old_price,
                           product_detail_picture: prod_picture,
                         ))),
             child: GridTile(
@@ -399,7 +353,7 @@ class Similar_single_pro extends StatelessWidget {
                       ),
                     ),
                     new Text(
-                      "\$${prod_price}",
+                      "\Rs${prod_price}",
                       style: TextStyle(
                           color: Colors.purple, fontWeight: FontWeight.bold),
                     )

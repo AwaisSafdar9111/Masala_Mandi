@@ -13,118 +13,93 @@ class _ProductsState extends State<Products> {
   var product_list = [
     {
       "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
+      "picture": 'images/haldi1.jpg',
       "old price": 195,
-      "price": 165,
+      "price": 300,
     },{
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
-    },
-    {
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },
-    {
       "name": 'Desi Ghee',
       "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },
-    {
-      "name": 'Haldi',
+      "price": 1650,
+    },{
+      "name": 'Cream',
+      "picture": 'images/Cream.jpg',
+      "price": 500,
+    },{
+      "name": 'Black Paper ',
       "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
+      "price": 250,
     },
     {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/cream.png',
-      "old price": 195,
-      "price": 165,
-    },
-    {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/coriander(Dhania).png',
-      "old price": 195,
-      "price": 165,
+      "name": 'Garm Masala',
+      "picture": 'images/garm_masala.jpg',
+      "price": 200,
     },{
       "name": 'Haldi',
+      "picture": 'images/haldi1.jpg',
+      "old price": 195,
+      "price": 300,
+    },{
+      "name": 'Desi Ghee',
+      "picture": 'images/Desi Ghee.jpg',
+      "price": 1650,
+    },{
+      "name": 'Cream',
+      "picture": 'images/Cream.jpg',
+      "price": 500,
+    },{
+      "name": 'Black Paper ',
       "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
+      "price": 250,
     },
     {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/cream.png',
-      "old price": 195,
-      "price": 165,
-    },
-    {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/coriander(Dhania).png',
-      "old price": 195,
-      "price": 165,
+      "name": 'Garm Masala',
+      "picture": 'images/garm_masala.jpg',
+      "price": 200,
     },{
       "name": 'Haldi',
+      "picture": 'images/haldi1.jpg',
+      "old price": 195,
+      "price": 300,
+    },{
+      "name": 'Desi Ghee',
+      "picture": 'images/Desi Ghee.jpg',
+      "price": 1650,
+    },{
+      "name": 'Cream',
+      "picture": 'images/Cream.jpg',
+      "price": 500,
+    },{
+      "name": 'Black Paper ',
       "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
+      "price": 250,
     },
     {
+      "name": 'Garm Masala',
+      "picture": 'images/garm_masala.jpg',
+      "price": 200,
+    },{
       "name": 'Haldi',
-      "picture": 'images/categories icons/cream.png',
+      "picture": 'images/haldi1.jpg',
       "old price": 195,
-      "price": 165,
-    },
-    {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/coriander(Dhania).png',
-      "old price": 195,
-      "price": 165,
-    },
-    {
-      "name": 'Haldi',
+      "price": 300,
+    },{
+      "name": 'Desi Ghee',
+      "picture": 'images/Desi Ghee.jpg',
+      "price": 1650,
+    },{
+      "name": 'Cream',
+      "picture": 'images/Cream.jpg',
+      "price": 500,
+    },{
+      "name": 'Black Paper ',
       "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
+      "price": 250,
     },
     {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/cream.png',
-      "old price": 195,
-      "price": 165,
+      "name": 'Garm Masala',
+      "picture": 'images/garm_masala.jpg',
+      "price": 200,
     },
-    {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/coriander(Dhania).png',
-      "old price": 195,
-      "price": 165,
-    },
-
 
 
   ];
@@ -193,7 +168,7 @@ class Single_pro extends StatelessWidget {
                     Expanded(child: Text(prod_name, style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16.0),),
 
                     ),
-                    new Text("\$${prod_price}",style: TextStyle (color: Colors.purple,fontWeight: FontWeight.bold),)
+                    new Text("\Rs${prod_price}",style: TextStyle (color: Colors.purple,fontWeight: FontWeight.bold),)
                   ],
                 ),
               ),
