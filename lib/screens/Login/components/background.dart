@@ -28,8 +28,8 @@ class Background extends StatelessWidget {
             bottom: 0,
             right: 0,
             child: Image.asset(
-              "images/login_bottom.png",
-              width: size.width * 0.4,
+              "images/main_bottom.png",
+              width: size.width * 1.3,
             ),
           ),
           child,

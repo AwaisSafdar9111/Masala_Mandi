@@ -14,7 +14,6 @@ class _ProductsState extends State<Products> {
     {
       "name": 'Haldi',
       "picture": 'images/haldi1.jpg',
-      "old price": 195,
       "price": 300,
     },{
       "name": 'Desi Ghee',
@@ -36,7 +35,7 @@ class _ProductsState extends State<Products> {
     },{
       "name": 'Haldi',
       "picture": 'images/haldi1.jpg',
-      "old price": 195,
+
       "price": 300,
     },{
       "name": 'Desi Ghee',
@@ -58,7 +57,7 @@ class _ProductsState extends State<Products> {
     },{
       "name": 'Haldi',
       "picture": 'images/haldi1.jpg',
-      "old price": 195,
+
       "price": 300,
     },{
       "name": 'Desi Ghee',
@@ -80,7 +79,7 @@ class _ProductsState extends State<Products> {
     },{
       "name": 'Haldi',
       "picture": 'images/haldi1.jpg',
-      "old price": 195,
+
       "price": 300,
     },{
       "name": 'Desi Ghee',
@@ -119,7 +118,6 @@ class _ProductsState extends State<Products> {
             child: Single_pro(
               prod_name: product_list[index]['name'],
               prod_picture: product_list[index]['picture'],
-              prod_old_price: product_list[index]['old price'],
               prod_price: product_list[index]['price'],
             ),
           );
@@ -145,7 +143,7 @@ class Single_pro extends StatelessWidget {
     return Card(
       margin: EdgeInsets.all(10),
       color: Colors.green[100],
-      shadowColor: Colors.blueGrey,
+      shadowColor: Colors.white38,
       elevation: 10,
       child: Hero(
         tag: new Text("hero tag 1`"),
@@ -162,7 +160,7 @@ class Single_pro extends StatelessWidget {
                 ))),
             child: GridTile(
               footer: Container(
-                color: Colors.greenAccent,
+                color: Colors.white38,
                 child: new Row(
                   children: <Widget>[
                     Expanded(child: Text(prod_name, style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16.0),),
