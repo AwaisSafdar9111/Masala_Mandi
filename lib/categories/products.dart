@@ -13,9 +13,9 @@ class _ProductsState extends State<Products> {
   var product_list = [
     {
       "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
+      "picture": 'images/haldi1.jpg',
       "old price": 195,
-      "price": 165,
+      "price": 300,
     },{
       "name": 'Haldi',
       "picture": 'images/Desi Ghee.jpg',
@@ -193,7 +193,7 @@ class Single_pro extends StatelessWidget {
                     Expanded(child: Text(prod_name, style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16.0),),
 
                     ),
-                    new Text("\$${prod_price}",style: TextStyle (color: Colors.purple,fontWeight: FontWeight.bold),)
+                    new Text("\Rs${prod_price}",style: TextStyle (color: Colors.purple,fontWeight: FontWeight.bold),)
                   ],
                 ),
               ),

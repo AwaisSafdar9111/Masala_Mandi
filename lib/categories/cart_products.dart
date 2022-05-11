@@ -113,7 +113,7 @@ class Single_cart_product extends StatelessWidget {
               alignment: Alignment.topLeft,
               padding: const EdgeInsets.all(8.0),
               child: new Text(
-                "\$${cart_prod_price}",
+                "\Rs${cart_prod_price}",
                 style: TextStyle(
                     fontSize: 17.0,
                     fontWeight: FontWeight.bold,
@@ -125,7 +125,7 @@ class Single_cart_product extends StatelessWidget {
         trailing: new Column(
           children: <Widget>[
             Expanded(child: new IconButton(onPressed: (){}, icon: Icon(Icons.arrow_drop_up),padding: const EdgeInsets.all(0.0),alignment: Alignment.topCenter,),),
-            new Text("$cart_prod_qty"),
+            new Text(" $cart_prod_qty"),
             Expanded(child: new IconButton(onPressed: (){}, icon: Icon(Icons.arrow_drop_down),padding:const EdgeInsets.all(0.0),alignment: Alignment.bottomCenter,)),
           ],
         ),

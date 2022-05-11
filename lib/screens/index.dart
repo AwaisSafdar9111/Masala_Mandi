@@ -1,8 +1,6 @@
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
 import 'package:spice_bazaar/categories/products.dart';
-
-import '../categories/cart_products.dart';
 import '../pages/cart.dart';
 import 'home.dart';
 
@@ -50,7 +48,8 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         elevation: 5,
         backgroundColor: Colors.green,
-        title: const Text('Spice Bazaar'),
+        title: const Text('Masala Mandi',style:TextStyle(fontWeight:FontWeight.bold, fontSize: 22.0) ),
+
         actions: <Widget>[
           IconButton(
               icon: const Icon(
@@ -151,7 +150,7 @@ class _HomePageState extends State<HomePage> {
           new Padding(padding: const EdgeInsets.only(left: 17.0),
             child: Container(
                 alignment: Alignment.centerLeft,
-                child: new Text ('Recent Products ',style: TextStyle(fontSize: 17.0,
+                child: new Text ('Products ',style: TextStyle(fontSize: 17.0,
                   fontWeight: FontWeight.bold),)
 
 

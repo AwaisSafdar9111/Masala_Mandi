@@ -59,16 +59,10 @@ class _ProductDetailsState extends State<ProductDetails> {
                   ),
                   title: new Row(
                     children: <Widget>[
+
                       Expanded(
                           child: new Text(
-                        "\$${widget.product_details_old_price}",
-                        style: TextStyle(
-                            color: Colors.grey,
-                            decoration: TextDecoration.lineThrough),
-                      )),
-                      Expanded(
-                          child: new Text(
-                        "\$${widget.product_details_new_price}",
+                        "Rs${widget.product_details_new_price}",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, color: Colors.green),
                       )),
@@ -137,15 +131,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           );
                         });
                   },
-                  color: Colors.white,
-                  textColor: Colors.green,
-                  elevation: 0.2,
-                  child: Row(
-                    children: <Widget>[
-                      Expanded(child: new Text("Color")),
-                      Expanded(child: new Icon(Icons.arrow_drop_down)),
-                    ],
-                  ),
+
                 ),
               ),
               // ====== The Size Button =======
@@ -290,53 +276,43 @@ class _Similar_productsState extends State<Similar_products> {
     {
       "name": 'Haldi',
       "picture": 'images/black pepper.jpg',
-      "old price": 195,
+     "price": 165,
+    },{
+      "name": 'Haldi',
+      "picture": 'images/Desi Ghee.jpg',
+       "price": 165,
+    },{
+      "name": 'Haldi',
+      "picture": 'images/black pepper.jpg',
+     "price": 165,
+    },{
+      "name": 'Haldi',
+      "picture": 'images/black pepper.jpg',
       "price": 165,
     },{
       "name": 'Haldi',
       "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
       "price": 165,
     },{
       "name": 'Haldi',
       "picture": 'images/black pepper.jpg',
-      "old price": 195,
       "price": 165,
     },{
       "name": 'Haldi',
       "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
+     "price": 165,
     },{
       "name": 'Haldi',
       "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
+     "price": 165,
     },{
       "name": 'Haldi',
       "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
       "price": 165,
     },{
       "name": 'Haldi',
       "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
+     "price": 165,
     },
   ];
 
@@ -350,7 +326,6 @@ class _Similar_productsState extends State<Similar_products> {
           return Similar_single_pro(
             prod_name: product_list[index]['name'],
             prod_picture: product_list[index]['picture'],
-            prod_old_price: product_list[index]['old price'],
             prod_price: product_list[index]['price'],
           );
         });
@@ -362,12 +337,10 @@ class Similar_single_pro extends StatelessWidget {
       {Key key,
       this.prod_name,
       this.prod_picture,
-      this.prod_old_price,
       this.prod_price})
       : super(key: key);
   final prod_name;
   final prod_picture;
-  final prod_old_price;
   final prod_price;
 
   @override
@@ -383,7 +356,6 @@ class Similar_single_pro extends StatelessWidget {
                     builder: (context) => new ProductDetails(
                           product_details_name: prod_name,
                           product_details_new_price: prod_price,
-                          product_details_old_price: prod_old_price,
                           product_detail_picture: prod_picture,
                         ))),
             child: GridTile(
@@ -399,7 +371,7 @@ class Similar_single_pro extends StatelessWidget {
                       ),
                     ),
                     new Text(
-                      "\$${prod_price}",
+                      "\Rs${prod_price}",
                       style: TextStyle(
                           color: Colors.purple, fontWeight: FontWeight.bold),
                     )
