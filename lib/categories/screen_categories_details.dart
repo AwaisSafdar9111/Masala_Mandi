@@ -79,7 +79,7 @@ class Single_pro extends StatelessWidget {
                 ))),
             child: GridTile(
               footer: Container(
-                color: Colors.greenAccent,
+                color: Colors.white38,
                 child: new Row(
                   children: <Widget>[
                     Expanded(child: Text(prod_name, style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16.0),),
