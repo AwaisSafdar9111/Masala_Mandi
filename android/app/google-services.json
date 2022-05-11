@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "34711582300",
-    "project_id": "craftcreation-ee0cf",
-    "storage_bucket": "craftcreation-ee0cf.appspot.com"
+    "project_number": "226654796609",
+    "project_id": "spicebazar-9379e",
+    "storage_bucket": "spicebazar-9379e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:34711582300:android:ff9db1813b39bc8c649899",
+        "mobilesdk_app_id": "1:226654796609:android:407c54e7a4053755f97fc0",
         "android_client_info": {
           "package_name": "com.example.spice_bazaar"
         }
       },
       "oauth_client": [
         {
-          "client_id": "34711582300-tk8c3sgeb8dbmcg0lsf8em75mtmm4ogn.apps.googleusercontent.com",
+          "client_id": "226654796609-ibbe8s563e905ltf7pkm6ubb4bbgmcsv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDI7J3m8Tk-HhfYKtVG2iki8FNB8cwrFBw"
+          "current_key": "AIzaSyD5r3JOEF3wlw1wmEZA7i-YDDeodgdTKeg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "34711582300-tk8c3sgeb8dbmcg0lsf8em75mtmm4ogn.apps.googleusercontent.com",
+              "client_id": "226654796609-ibbe8s563e905ltf7pkm6ubb4bbgmcsv.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
