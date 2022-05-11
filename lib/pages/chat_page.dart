@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'chat_details.dart';
 import 'chat_users.dart';
 import 'conversation_list.dart';
 
@@ -43,13 +44,7 @@ class _ChatPageState extends State<ChatPage> {
                         borderRadius: BorderRadius.circular(30),
                         color: Colors.pink[50],
                       ),
-                      child: Row(
-                        children: <Widget>[
-                          Icon(Icons.add,color: Colors.pink,size: 20,),
-                          SizedBox(width: 2,),
-                          Text("Add New",style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
-                        ],
-                      ),
+
                     )
                   ],
                 ),
@@ -74,6 +69,7 @@ class _ChatPageState extends State<ChatPage> {
                 ),
               ),
             ),
+
             ListView.builder(
               itemCount: chatUsers.length,
               shrinkWrap: true,
