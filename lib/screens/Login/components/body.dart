@@ -18,8 +18,8 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    TextEditingController emailTextController;
-    TextEditingController passwordTextController;
+    final emailTextController =new TextEditingController();
+    final passwordTextController =new TextEditingController();
     return Background(
       child: SingleChildScrollView(
         child: Column(
@@ -47,13 +47,23 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
                 text: "LOGIN",
-                press: () {
-                  //context.read<AuthenticationService>()
-                  //     .signIn(
-                  //   email: emailTextController.text.trim(),
-                  //   password: passwordTextController.text.trim(),
-                  // );
-                }
+                press: () async {
+                  final result = await context
+                    .read<AuthenticationService>()
+                      .signIn(
+                    emailTextController.text.toString().trim(),
+                    passwordTextController.text.toString().trim()
+                  );
+                  if (result == "Signed in") {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => Homescreen()));
+
+                  }
+                  else
+                  {
+                    print("Not sign in");
+                  }
+                },
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(

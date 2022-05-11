@@ -84,6 +84,13 @@ class _ProfileState extends State<Profile> {
               leading: Icon(Icons.help),
             ),
           ),
+          InkWell(
+            onTap: () {},
+            child: const ListTile(
+              title: Text('LogOut'),
+              leading: Icon(Icons.help),
+            ),
+          ),
         ],
       ),
       

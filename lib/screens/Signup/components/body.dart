@@ -46,8 +46,8 @@ class Body extends StatelessWidget {
                 final result = await context
                     .read<AuthenticationService>()
                     .signUp(
-                    emailTextController.text,
-                    passwordTextController.text
+                    emailTextController.text.toString().trim(),
+                    passwordTextController.text.toString().trim()
                 );
                 print(emailTextController.text.trim());
                 if (result == "Signed up") {
