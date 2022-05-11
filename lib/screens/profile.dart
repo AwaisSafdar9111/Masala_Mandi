@@ -1,4 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../authentication_service.dart';
 import '../pages/cart.dart';
 import 'home.dart';
 
@@ -8,15 +11,25 @@ class Profile extends StatefulWidget {
 }
 
 class _ProfileState extends State<Profile> {
+
+  User user;
+
   @override
+  void initState() {
+    setState(() {
+      // 2
+      user = context.read<AuthenticationService>().getUser();
+    });
+    super.initState();
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
        body : ListView(
         children: <Widget>[
           //header
           UserAccountsDrawerHeader(
-            accountName: const Text('Moiz Butt'),
-            accountEmail: const Text('moizbutt890@gmail.com'),
+            accountEmail: Text(user.email),
             currentAccountPicture: GestureDetector(
               child: const CircleAvatar(
                 backgroundColor: Colors.grey,
@@ -85,7 +98,10 @@ class _ProfileState extends State<Profile> {
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              //context.read<AuthenticationService>().signOut();
+              print("hemlo g");
+            },
             child: const ListTile(
               title: Text('LogOut'),
               leading: Icon(Icons.help),
