@@ -4,7 +4,9 @@ import 'package:spice_bazaar/screens/settings.dart';
 
 
 import '../categories/categories_bnb_page.dart';
+import '../pages/cart.dart';
 import '../pages/chat_page.dart';
+import 'cartbnb.dart';
 import 'chat.dart';
 import 'index.dart';
 
@@ -145,7 +147,7 @@ class _HomeState extends State<Homescreen> {
                     onPressed: () {
                       setState(() {
                         currentScreen =
-                            Settings(); // if user taps on this dashboard tab will be active
+                        Cartbnd(); // if user taps on this dashboard tab will be active
                         currentTab = 4;
                       });
                     },
@@ -153,11 +155,11 @@ class _HomeState extends State<Homescreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Icon(
-                          Icons.settings,
+                          Icons.shopping_cart,
                           color: currentTab == 4 ? Colors.green : Colors.grey,
                         ),
                         Text(
-                          'Settings',
+                          'Shopping',
                           style: TextStyle(
                             color: currentTab == 4 ? Colors.green : Colors.grey,
                           ),
