@@ -4,8 +4,8 @@ import 'package:spice_bazaar/screens/settings.dart';
 
 
 import '../categories/horizontal_listview.dart';
+import '../pages/chat_page.dart';
 import 'chat.dart';
-import 'dashboard.dart';
 import 'index.dart';
 
 class Homescreen extends StatefulWidget {
@@ -88,7 +88,7 @@ class _HomeState extends State<Homescreen> {
                     onPressed: () {
                       setState(() {
                         currentScreen =
-                            Chat(); currentTab = 2;
+                            ChatPage(); currentTab = 2;
                       });
                     },
                     child: Column(
