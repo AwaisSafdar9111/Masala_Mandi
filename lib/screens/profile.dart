@@ -31,7 +31,6 @@ class _ProfileState extends State<Profile> {
         children: <Widget>[
           //header
           UserAccountsDrawerHeader(
-            accountName: const Text('Moiz Butt'),
             accountEmail: Text(user.email),
             currentAccountPicture: GestureDetector(
               child: const CircleAvatar(

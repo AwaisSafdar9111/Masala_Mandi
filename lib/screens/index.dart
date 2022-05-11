@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
         boxFit: BoxFit.cover,
         images: const [
           AssetImage('images/Spice mix.jpg'),
-          AssetImage('images/Haldi.jpg'),
+          AssetImage('images/haldi.jpg'),
           AssetImage('images/Coriander Powder(Dhania).jpg'),
           AssetImage('images/Cream.jpg'),
           AssetImage('images/black pepper.jpg'),
