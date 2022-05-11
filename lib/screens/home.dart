@@ -3,7 +3,7 @@ import 'package:spice_bazaar/screens/profile.dart';
 import 'package:spice_bazaar/screens/settings.dart';
 
 
-import '../categories/horizontal_listview.dart';
+import '../categories/categories_bnb_page.dart';
 import '../pages/chat_page.dart';
 import 'chat.dart';
 import 'index.dart';
