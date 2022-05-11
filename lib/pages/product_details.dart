@@ -30,7 +30,7 @@ class _ProductDetailsState extends State<ProductDetails> {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => new HomePage()));
             },
-            child: const Text('Spice Bazaar')),
+            child: const Text('Masala Mandi')),
         actions: <Widget>[
           IconButton(
               icon: const Icon(
@@ -198,7 +198,7 @@ class _ProductDetailsState extends State<ProductDetails> {
           new ListTile(
             title: new Text("Product Details"),
             subtitle: new Text(
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."),
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."),
           ),
           Divider(),
           //====ADD THE PRODUCT NAME=====
@@ -275,44 +275,26 @@ class _Similar_productsState extends State<Similar_products> {
   var product_list = [
     {
       "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-     "price": 165,
+      "picture": 'images/haldi1.jpg',
+      "old price": 195,
+      "price": 300,
     },{
-      "name": 'Haldi',
+      "name": 'Desi Ghee',
       "picture": 'images/Desi Ghee.jpg',
-       "price": 165,
+      "price": 1650,
     },{
-      "name": 'Haldi',
+      "name": 'Cream',
+      "picture": 'images/Cream.jpg',
+      "price": 500,
+    },{
+      "name": 'Black Paper ',
       "picture": 'images/black pepper.jpg',
-     "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-     "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-     "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-     "price": 165,
+      "price": 250,
+    },
+    {
+      "name": 'Garm Masala',
+      "picture": 'images/garm_masala.jpg',
+      "price": 200,
     },
   ];
 

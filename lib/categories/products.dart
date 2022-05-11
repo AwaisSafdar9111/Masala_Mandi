@@ -17,114 +17,89 @@ class _ProductsState extends State<Products> {
       "old price": 195,
       "price": 300,
     },{
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
-    },
-    {
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },{
-      "name": 'Haldi',
-      "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },
-    {
       "name": 'Desi Ghee',
       "picture": 'images/Desi Ghee.jpg',
-      "old price": 195,
-      "price": 165,
-    },
-    {
-      "name": 'Haldi',
+      "price": 1650,
+    },{
+      "name": 'Cream',
+      "picture": 'images/Cream.jpg',
+      "price": 500,
+    },{
+      "name": 'Black Paper ',
       "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
+      "price": 250,
     },
     {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/cream.png',
-      "old price": 195,
-      "price": 165,
-    },
-    {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/coriander(Dhania).png',
-      "old price": 195,
-      "price": 165,
+      "name": 'Garm Masala',
+      "picture": 'images/garm_masala.jpg',
+      "price": 200,
     },{
       "name": 'Haldi',
+      "picture": 'images/haldi1.jpg',
+      "old price": 195,
+      "price": 300,
+    },{
+      "name": 'Desi Ghee',
+      "picture": 'images/Desi Ghee.jpg',
+      "price": 1650,
+    },{
+      "name": 'Cream',
+      "picture": 'images/Cream.jpg',
+      "price": 500,
+    },{
+      "name": 'Black Paper ',
       "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
+      "price": 250,
     },
     {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/cream.png',
-      "old price": 195,
-      "price": 165,
-    },
-    {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/coriander(Dhania).png',
-      "old price": 195,
-      "price": 165,
+      "name": 'Garm Masala',
+      "picture": 'images/garm_masala.jpg',
+      "price": 200,
     },{
       "name": 'Haldi',
+      "picture": 'images/haldi1.jpg',
+      "old price": 195,
+      "price": 300,
+    },{
+      "name": 'Desi Ghee',
+      "picture": 'images/Desi Ghee.jpg',
+      "price": 1650,
+    },{
+      "name": 'Cream',
+      "picture": 'images/Cream.jpg',
+      "price": 500,
+    },{
+      "name": 'Black Paper ',
       "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
+      "price": 250,
     },
     {
+      "name": 'Garm Masala',
+      "picture": 'images/garm_masala.jpg',
+      "price": 200,
+    },{
       "name": 'Haldi',
-      "picture": 'images/categories icons/cream.png',
+      "picture": 'images/haldi1.jpg',
       "old price": 195,
-      "price": 165,
-    },
-    {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/coriander(Dhania).png',
-      "old price": 195,
-      "price": 165,
-    },
-    {
-      "name": 'Haldi',
+      "price": 300,
+    },{
+      "name": 'Desi Ghee',
+      "picture": 'images/Desi Ghee.jpg',
+      "price": 1650,
+    },{
+      "name": 'Cream',
+      "picture": 'images/Cream.jpg',
+      "price": 500,
+    },{
+      "name": 'Black Paper ',
       "picture": 'images/black pepper.jpg',
-      "old price": 195,
-      "price": 165,
+      "price": 250,
     },
     {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/cream.png',
-      "old price": 195,
-      "price": 165,
+      "name": 'Garm Masala',
+      "picture": 'images/garm_masala.jpg',
+      "price": 200,
     },
-    {
-      "name": 'Haldi',
-      "picture": 'images/categories icons/coriander(Dhania).png',
-      "old price": 195,
-      "price": 165,
-    },
-
 
 
   ];
