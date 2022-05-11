@@ -1,10 +1,14 @@
 import 'package:carousel_pro/carousel_pro.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:spice_bazaar/categories/products.dart';
+import '../authentication_service.dart';
 import '../pages/cart.dart';
 import 'home.dart';
 
 class HomePage extends StatefulWidget {
+
   const HomePage({Key key}) : super(key: key);
 
   @override
@@ -12,6 +16,18 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+  User user;
+
+  @override
+  void initState() {
+    setState(() {
+      // 2
+      user = context.read<AuthenticationService>().getUser();
+    });
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     Widget imageCarousel=Container(
@@ -72,8 +88,7 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             //header
             UserAccountsDrawerHeader(
-              accountName: const Text('Moiz Butt'),
-              accountEmail: const Text('moizbutt890@gmail.com'),
+              accountEmail: Text(user.email),
               currentAccountPicture: GestureDetector(
                 child: const CircleAvatar(
                   backgroundColor: Colors.grey,

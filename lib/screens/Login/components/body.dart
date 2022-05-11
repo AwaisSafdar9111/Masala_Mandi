@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:spice_bazaar/screens/Login/components/background.dart';
 import 'package:spice_bazaar/screens/Signup/signup_screen.dart';
 import 'package:spice_bazaar/components/already_have_an_account_acheck.dart';
@@ -55,7 +56,11 @@ class Body extends StatelessWidget {
                     passwordTextController.text.toString().trim()
                   );
                   if (result == "Signed in") {
-                    Navigator.of(context).push(MaterialPageRoute(
+                    final prefs = await SharedPreferences.getInstance();
+                    await prefs.setString('email', emailTextController.text.toString().trim());
+                    await prefs.setString('password', passwordTextController.text.toString().trim());
+                    Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
                         builder: (context) => Homescreen()));
 
                   }
