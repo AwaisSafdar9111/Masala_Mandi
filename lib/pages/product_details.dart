@@ -289,19 +289,52 @@ class _Similar_productsState extends State<Similar_products> {
   var product_list = [
     {
       "name": 'Haldi',
-      "picture": 'images/categories icons/coriander(Dhania).png',
+      "picture": 'images/black pepper.jpg',
       "old price": 195,
       "price": 165,
-    },
-    {
-      "name": 'Desi Ghee',
-      "picture": 'images/categories icons/Desi ghee.png',
-      "old price": 195,
-      "price": 165,
-    },
-    {
+    },{
       "name": 'Haldi',
-      "picture": 'images/categories icons/turmeric(Haldi).png',
+      "picture": 'images/Desi Ghee.jpg',
+      "old price": 195,
+      "price": 165,
+    },{
+      "name": 'Haldi',
+      "picture": 'images/black pepper.jpg',
+      "old price": 195,
+      "price": 165,
+    },{
+      "name": 'Haldi',
+      "picture": 'images/black pepper.jpg',
+      "old price": 195,
+      "price": 165,
+    },{
+      "name": 'Haldi',
+      "picture": 'images/Desi Ghee.jpg',
+      "old price": 195,
+      "price": 165,
+    },{
+      "name": 'Haldi',
+      "picture": 'images/black pepper.jpg',
+      "old price": 195,
+      "price": 165,
+    },{
+      "name": 'Haldi',
+      "picture": 'images/black pepper.jpg',
+      "old price": 195,
+      "price": 165,
+    },{
+      "name": 'Haldi',
+      "picture": 'images/Desi Ghee.jpg',
+      "old price": 195,
+      "price": 165,
+    },{
+      "name": 'Haldi',
+      "picture": 'images/Desi Ghee.jpg',
+      "old price": 195,
+      "price": 165,
+    },{
+      "name": 'Haldi',
+      "picture": 'images/black pepper.jpg',
       "old price": 195,
       "price": 165,
     },
