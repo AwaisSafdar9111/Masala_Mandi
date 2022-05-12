@@ -23,13 +23,7 @@ class _CartbndState extends State<Cartbnd> {
                 color: Colors.white,
               ),
               onPressed: () {}),
-          IconButton(
-              icon: const Icon(
-                Icons.shopping_cart,
-                color: Colors.white,
-              ),
-              onPressed: () {})
-        ],
+                 ],
       ),
       body: new Cart_Products(),
     );

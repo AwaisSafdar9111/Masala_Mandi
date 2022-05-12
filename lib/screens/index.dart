@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
         boxFit: BoxFit.cover,
         images: const [
           AssetImage('images/Spice mix.jpg'),
-          AssetImage('images/haldi.jpg'),
+          AssetImage('images/Haldi.jpg'),
           AssetImage('images/Coriander Powder(Dhania).jpg'),
           AssetImage('images/Cream.jpg'),
           AssetImage('images/black pepper.jpg'),
@@ -73,14 +73,7 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.white,
               ),
               onPressed: () {}),
-          IconButton(
-              icon: const Icon(
-                Icons.shopping_cart,
-                color: Colors.white,
-              ),
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>Cart()));
-              })
+
         ],
       ),
       drawer: Drawer(

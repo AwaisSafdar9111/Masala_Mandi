@@ -21,7 +21,7 @@ class MyApp extends StatefulWidget {
 
 
 class _MyAppState  extends State<MyApp> {
-  static final String title = 'Spice Bazaar ';
+  static final String title = 'Masala Mandi ';
 
   bool isLoggedIn = false;
   @override
