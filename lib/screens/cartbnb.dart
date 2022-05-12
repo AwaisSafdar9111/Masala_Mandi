@@ -26,6 +26,22 @@ class _CartbndState extends State<Cartbnd> {
                  ],
       ),
       body: new Cart_Products(),
+      bottomNavigationBar: new Container(
+        height: 150,
+        color: Colors.white54,
+        child: Row(
+          children: <Widget>[
+            Expanded(child: ListTile(
+              title: new Text("Total:"),
+              subtitle: new Text("Rs 1850"),
+            )),
+            Expanded(child: new MaterialButton(onPressed: (){},
+              child: new Text("Check out",style: TextStyle(color: Colors.white),),
+              color: Colors.green,),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
