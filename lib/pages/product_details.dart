@@ -111,30 +111,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                 ),
               ),
               // ====== The Size Button =======
-              Expanded(
-                child: MaterialButton(
-                  onPressed: () {
-                    showDialog(
-                        context: context,
-                        builder: (context) {
-                          return new AlertDialog(
-                            title: new Text('Colors'),
-                            content: new Text('Choose the colors'),
-                            actions: <Widget>[
-                              new MaterialButton(
-                                onPressed: () {
-                                  Navigator.of(context).pop(context);
-                                },
-                                child: new Text("Close"),
-                              )
-                            ],
-                          );
-                        });
-                  },
 
-                ),
-              ),
-              // ====== The Size Button =======
+              // ====== The Quantity Button =======
               Expanded(
                 child: MaterialButton(
                   onPressed: () {
